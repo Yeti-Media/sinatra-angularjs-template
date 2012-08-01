@@ -1,0 +1,18 @@
+<div>
+  <span ng-show="hasErrors()" ng-bind="User.errors" ></span>
+  <form name="userRegisterForm" ng-submit="register()">
+    <div class="control-group">
+      <label>Email</label>
+      <input type="email" ng-model="User.email" required>
+    </div>
+    <div class="control-group">
+      <label>Password</label>
+      <input type="password" ng-model="User.password" required>
+    </div>
+    <div class="control-group">
+      <label>Password Confirmation</label>
+      <input type="password" ng-model="User.password_confirmation" required>
+    </div>
+    <button class="btn">Register </button>
+  </form>
+</div>

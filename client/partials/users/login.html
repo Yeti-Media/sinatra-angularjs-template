@@ -1,0 +1,14 @@
+<div>
+  <span ng-show="hasErrors()" ng-bind="User.errors" ></span>
+  <form name="userLoginForm" ng-submit="login()">
+    <div class="control-group">
+      <label>Email</label>
+      <input type="email" ng-model="Session.email" required>
+    </div>
+    <div class="control-group">
+      <label>Password</label>
+      <input type="password" ng-model="Session.password" required>
+    </div>
+    <button class="btn">Login </button>
+  </form>
+</div>
